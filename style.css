@@ -1,0 +1,80 @@
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	text-align: center;
+	margin: 25px 10% 0px 10%;
+	color:#FF0000;
+	font-size: 25px;
+}
+#type {
+	margin: 50px auto 0 40%;
+	width: 150px;
+	padding-left: 5px;
+	text-align: center;
+	font-size: 20px;
+	background-color:#FFDE00;
+	color:#3C5AA6;
+}
+#type-button {
+	background-color: #FFDE00;
+	border-color: #c7a008;
+	border-width: 6px;
+	color: #3C5AA6;
+	font-size: 20px;
+}
+.effective {
+	width: 100%;
+}
+#strengths, #weaknesses, #pokemon {
+	text-align: center;
+}
+#strengths h2, #weaknesses h2{
+	color: #FF0000;
+	font-size: 20px;
+}
+#strengths h3, #weaknesses h3, #pokemon h2 {
+	color: #CC0000;
+	font-size: 23px;
+}
+#strengths p, #weaknesses p, .list p {
+	color: #FFDE00;
+  	color:#3B4CCA;
+	font-size: 25px;
+}
+.list {
+	display: grid;
+	grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	padding-bottom: 60px;
+}
+@media only screen and (min-width: 750px) {
+	#pokemon .list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+  	#pokemon .list p {
+		flex: 1 0 18%;
+  	}
+}
+@media only screen and (max-width: 500px) {
+	#type, #type-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+	}
+}
+.footer {
+	position: fixed;	
+	text-align: center;
+	bottom: 0;
+	background-color:#FFDE00;
+	color: #FF0000;
+	width: 100%;
+}
